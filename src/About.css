@@ -1,0 +1,175 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.about-page{
+    position: relative;
+    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/trace-liberty-demo_Free/1224681717/web/assets/images/banner4.jpg);
+    justify-content: center;
+    display: flex;
+    padding: 100px;
+    background-size: cover;
+    max-width: none;
+}
+.about-section {
+  padding: 100px 100px;
+  background: #fff;
+  font-size: 20px;
+}
+
+.about-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-left h6 {
+  color: #f9a825; 
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.about-left h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.about-left p {
+  color: #666;
+}
+
+.about-right p {
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.read-more {
+  color: #f9a825;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid #f9a825;
+  padding-bottom: 2px;
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  color: #333;
+  border-color: #333;
+}
+
+.about.dark-theme{
+    background: #1e1e1e; 
+    color: white; 
+}
+.about-section.dark-theme {
+  background: #1e1e1e; 
+  color: white; 
+}
+
+.about-section.dark-theme .about-left h2,
+.about-section.dark-theme .about-right p {
+  color: #f1f1f1; 
+}
+
+.about-section.dark-theme p {
+    color: #ccc; 
+}
+
+.about-section.dark-theme .about-left h6 {
+  color: #ffd700; 
+}
+
+.about-section.dark-theme .read-more {
+  color: #ffd700; 
+  border-bottom: 1px solid #ffd700;
+}
+
+.about-section.dark-theme .read-more:hover {
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+
+/* ------------------- DESKTOP TO TABLET (MAX-WIDTH: 1023px) ------------------- */
+@media (max-width: 1023px){
+  .about-page{ padding: 70px; }
+  .about-section{ padding: 60px 40px; }
+  .about-left h2{ font-size: 32px; }
+}
+
+/* ------------------- TABLET TO MOBILE (MAX-WIDTH: 768px) ------------------- */
+@media (max-width: 768px){
+  .container{ padding: 0 20px; }
+  
+  .navbar .nav_icon{
+      display: block !important;
+  }
+  
+  .navbar i.fa.fa-bars{
+      display: block !important;
+      font-size: 20px;
+      color: #fb8500;
+      cursor: pointer;
+      background-color: rgba(255, 0, 0, 0.2);
+      padding: 5px;
+      border-radius: 3px;
+  }
+  
+  .nav_icon {
+      display: block !important;
+      position: relative;
+      z-index: 9999;
+  }
+  
+  .nav_icon i.fa.fa-bars {
+      display: block !important;
+      font-size: 24px !important;
+      color: #fb8500 !important;
+      cursor: pointer !important;
+      padding: 8px !important;
+      border-radius: 4px !important;
+      transition: all 0.3s ease;
+  }
+  
+  .nav_icon i.fa.fa-bars:hover {
+      background-color: rgba(251, 133, 0, 0.1);
+      transform: scale(1.1);
+  }
+  
+  .navbar {
+    height: 40px;
+  }
+
+  .navbar p {
+    font-size: 22px;
+  }
+  
+  .about-page{ padding: 60px 20px; }
+  .about-section{ padding: 40px 20px; }
+  .about-content{ flex-direction: column; gap: 20px; align-items: flex-start; }
+  .about-left h6{ font-size: 20px; }
+  .about-left h2{ font-size: 28px; }
+  .read-more{ font-size: 16px; }
+  .footer-top{ flex-direction: column; align-items: center; text-align: center; }
+  .footer-top > div{ width: 100%; max-width: 520px; }
+}
+
+/* ------------------- SMALL MOBILE (MAX-WIDTH: 480px) ------------------- */
+@media (max-width: 480px){
+  .navbar p{ font-size: 26px; }
+  .about-page{ padding: 40px 16px; }
+  .about-section{ padding: 24px 16px; font-size: 18px; }
+  .about-left h2{ font-size: 24px; }
+  .about-left h6{ font-size: 18px; }
+}

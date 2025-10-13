@@ -1,0 +1,72 @@
+
+.service{
+    position: relative;
+    background: url(https://p.w3layouts.com/demos_new/template_demo/08-09-2021/trace-liberty-demo_Free/1224681717/web/assets/images/banner4.jpg);
+    margin: 0px;
+    justify-content: center;
+    display: flex;
+    padding: 100px;
+    background-size: cover;
+}
+.services-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.service-box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.service-box.reverse {
+  flex-direction: row-reverse;
+}
+
+.service-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-number {
+  color: #ff6600;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.service-content h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.service-content p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid #ff6600;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  color: #ff6600;
+}

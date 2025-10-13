@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+footer {
+    background-color: black;
+    margin-top: 50px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    color: #ffffff;
+}
+
+.structure {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer_raw, .footer-nav-col {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer_raw h6, .footer-nav-col h6 {
+    color: #ced4da;
+    font-size: 25px;
+    font-family: 'Castoro', serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.footer_raw li, .footer-nav-col li {
+    list-style: none;
+    font-family: 'Castoro', serif;
+    color: #696969;
+    margin-bottom: 10px;
+    font-size: 17px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav-col li:hover {
+    color: #ced4da;
+    cursor: pointer;
+}
+
+.social_media {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social_media span {
+    color: #696969;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social_media span:hover {
+    color: #ced4da;
+    cursor: pointer;
+}
+
+.copyright_line {
+    border-top: 1px solid rgba(103, 99, 99, 0.14);
+    padding: 30px 0;
+    margin-top: 30px;
+    transition: border-color 0.3s ease;
+}
+
+.copyright_line p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Castoro', serif;
+    color: #696969;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.copyright_line p a {
+    text-decoration: none;
+    color: #fd9e02;
+    margin-left: 5px;
+    opacity: 0.8;
+}
+
+.footer_raw li p, .footer-nav-col li p {
+    color: inherit;
+    margin: 0;
+}
+
+footer.light {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.light .footer_raw h6,
+.light .footer-nav-col h6 {
+    color: #212529;
+}
+
+.light .footer_raw li,
+.light .footer-nav-col li {
+    color: #495057;
+}
+
+.light .footer-nav-col li:hover {
+    color: #212529;
+}
+
+.light .social_media span {
+    color: #495057;
+}
+
+.light .social_media span:hover {
+    color: #212529;
+}
+
+.light .copyright_line {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.light .copyright_line p {
+    color: #495057;
+}
+
+.fa-search::before {
+    margin-left: -8px;
+}
+/* Add to your existing CSS file, after the main footer styles */
+
+@media (max-width: 768px) {
+    /* Footer responsiveness */
+    .container {
+        /* Adjust container padding for smaller screens */
+        padding: 0 20px;
+    }
+
+    .structure {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        gap: 30px; 
+    }
+
+    .footer_raw, .footer-nav-col {
+        /* Add some space between stacked columns */
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 100%; /* Ensure each column takes full width */
+    }
+
+    .footer_raw h6, .footer-nav-col h6 {
+        font-size: 22px; /* Slightly reduce heading size */
+        margin-bottom: 15px;
+    }
+
+    .footer_raw li, .footer-nav-col li {
+        font-size: 16px; /* Slightly reduce list item size */
+    }
+
+    .copyright_line {
+        padding: 20px 0; /* Reduce padding */
+        margin-top: 20px;
+    }
+
+    .copyright_line p {
+        font-size: 15px; /* Reduce copyright text size */
+    }
+}
+
+@media (max-width: 480px) {
+    .structure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .container {
+        padding: 0 15px;
+    }
+    
+    .footer_raw, .footer-nav-col {
+        margin-top: 25px;
+    }
+
+    .social_media {
+        justify-content: flex-start;
+    }
+}
