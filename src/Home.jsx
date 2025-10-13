@@ -364,6 +364,9 @@ const Home = () => {
               <input type="email" placeholder="Enter your email..." />
               <a href="#">Subscribe</a>
             </div>
+            <div>
+              <p>yash</p>
+            </div>
           </div>
         </div>
       </section>
