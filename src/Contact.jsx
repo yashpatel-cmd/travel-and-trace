@@ -179,7 +179,7 @@ const Contact = () => {
         <div className="contact-hero-overlay"></div> 
         <div className="container">
           <div className="contact-hero-content">
-            <h1>Contact Us</h1>
+            <h1>Contact Us - yash</h1>
             <p>
               Home <i className="fa fa-arrow-right" aria-hidden="true"></i> Contact
             </p>
