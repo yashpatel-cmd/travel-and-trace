@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import About from "./About";
 import Services from "./Services";
 import Destination from "./Destination";
+import { TodoAppExample } from './todo.jsx'; 
 import Contact from "./Contact";
 import { BrowserRouter, Routes , Route} from "react-router-dom";
 
@@ -21,6 +22,7 @@ root.render(
         <Route path="/services" element={<Services />} />
         <Route path="/destination" element={<Destination />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/todo" element={<TodoAppExample />} />
       </Routes>
     <Footer />
   </ThemeProvider>

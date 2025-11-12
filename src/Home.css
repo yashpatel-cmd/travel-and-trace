@@ -17,7 +17,7 @@
 .home_page {
     position: relative;
     margin-top: 5px;
-    height: 600px;
+    height: 750px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -46,7 +46,10 @@
 .home_text {
     position: relative;
     z-index: 1;
-    top: 150px;
+    height: 200px;
+    top: 200px;
+    gap: 20px;
+    margin-left: 80px;
 }
 
 .home_page:nth-child(1) {
@@ -94,9 +97,7 @@
 }
 
 .homepage_btn{
-    display: flex;
     margin-top: 30px;
-    gap: 30px;
 }
 
 .home_btn_read{
@@ -119,6 +120,7 @@
     font-size: 20px;
     padding: 10px 15px;
     color: aliceblue;
+    margin-left: 10px;
     background-color: transparent;
     border-radius: 10px;
     font-family: 'Castoro', serif;

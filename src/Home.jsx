@@ -1,7 +1,7 @@
-import React from 'react'
-import { useEffect } from 'react'
-import './Home.css'
-import { BrowserRouter , Routes, Route} from 'react-router-dom';
+import React from 'react';
+import { useEffect } from 'react';
+import './Home.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const Home = () => {
     useEffect(() => {
@@ -72,7 +72,7 @@ const Home = () => {
       return () => cancelAnimationFrame(animationFrameId);
     };
 
-    const counters = document.querySelectorAll('.count p');
+    const counters = document.querySelectorAll('.counter');
     let cleanupFns = [];
 
     const observer = new IntersectionObserver(
@@ -81,9 +81,9 @@ const Home = () => {
           const counterSection = entry.target;
           if (entry.isIntersecting && !counterSection.classList.contains('animated')) {
             counters.forEach(counter => {
-              const targetNumber = parseInt(counter.textContent, 10);
-              const originalText = counter.getAttribute('data-target') || targetNumber;
-              counter.setAttribute('data-target', originalText);
+              const targetNumber = parseInt(counter.getAttribute('data-target'), 10);
+              
+              if (isNaN(targetNumber) || targetNumber <= 0) return;
 
               counter.textContent = '0';
               cleanupFns.forEach(fn => fn());
@@ -100,7 +100,7 @@ const Home = () => {
       }
     );
 
-    const counterSection = document.querySelector('.autoplay_counter');
+    const counterSection = document.querySelector('.stats-section');
     if (counterSection) {
       observer.observe(counterSection);
     }
@@ -274,11 +274,11 @@ const Home = () => {
               <p>Team Members</p>
             </div>
             <div className="stat-box">
-              <h2 className="counter" data-target="1812">0</h2>
+              <h2 className="counter" data-target="1012">0</h2>
               <p>Awesome Tours</p>
             </div>
             <div className="stat-box">
-              <h2 className="counter" data-target="190">0</h2>
+              <h2 className="counter" data-target="1090">0</h2>
               <p>Awards</p>
             </div>
           </div>
